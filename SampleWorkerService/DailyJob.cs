@@ -12,7 +12,7 @@ namespace SampleWorkerService
         public async Task Execute(IJobExecutionContext context)
         {
             await Console.Out.WriteLineAsync("             ");
-            await Console.Out.WriteLineAsync($"Daily job is Executed! tme is '{DateTime.Now}'");
+            await Console.Out.WriteLineAsync($"Daily job is Executed! time is '{DateTime.Now}'");
         }
     }
 }

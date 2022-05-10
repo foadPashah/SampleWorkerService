@@ -5,7 +5,6 @@ using System.Configuration;
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices((hostContext, services) =>
     {
-        //services.AddHostedService<Worker>();
         services.AddQuartz(q => 
         {
             q.UseInMemoryStore();
